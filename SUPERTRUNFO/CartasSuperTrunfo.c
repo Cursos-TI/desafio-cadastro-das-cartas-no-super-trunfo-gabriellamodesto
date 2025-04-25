@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+//função
+
+float cal_pib_densidade(float n1, float n2) 
+{ return n1 / n2;
+}
+
 int main() {
 
     //Declaração de variáveis da primeira carta
@@ -11,6 +17,8 @@ int main() {
     float area1;
     float pib1;
     int pontosturisticos1;
+    float densidade_populacional1;
+    float pib_percapita1;
 
     //Entrada da primeira carta
 
@@ -35,6 +43,10 @@ int main() {
     printf("Indique o número de pontos turísticos: ");
     scanf("%d", &pontosturisticos1);
 
+    densidade_populacional1 = (float) cal_pib_densidade(populacao1, area1); //chamada da função
+
+    pib_percapita1 = (float) cal_pib_densidade(pib1 * 1000000000, populacao1); //chamada da função
+
     //Declaração de variáveis da segunda carta
 
     char estado2;
@@ -44,6 +56,8 @@ int main() {
     float area2;
     float pib2;
     int pontosturisticos2;
+    float densidade_populacional2;
+    float pib_percapita2;
 
     //Entrada da segunda carta
 
@@ -68,6 +82,10 @@ int main() {
     printf("Indique o número de pontos turísticos: ");
     scanf("%d", &pontosturisticos2);
 
+    densidade_populacional2 = (float) cal_pib_densidade(populacao2, area2); //chamada da função
+
+    pib_percapita2 = (float) cal_pib_densidade(pib2 * 1000000000, populacao2); //chamada da função
+
     //Saída da primeira carta
 
     printf("Código da Carta: %s\n", codigo1);
@@ -77,6 +95,9 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: R$ %.2f bilhões\n", pib1);
     printf("Pontos turísticos: %d\n", pontosturisticos1);
+    printf("A densidade populacional da cidade é: %.2f habitantes por km²\n", densidade_populacional1);
+    printf("O PIB per capita da cidade é: R$ %.2f \n", pib_percapita1);
+
 
     //Saída da segunda carta
 
@@ -87,6 +108,8 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: R$ %.2f bilhões\n", pib2);
     printf("Pontos turísticos: %d\n", pontosturisticos2);
+    printf("A densidade populacional da cidade é: %.2f habitantes por km² \n", densidade_populacional2);
+    printf("O PIB per capita da cidade é: R$ %.2f \n", pib_percapita2);
 
     return 0;
 
