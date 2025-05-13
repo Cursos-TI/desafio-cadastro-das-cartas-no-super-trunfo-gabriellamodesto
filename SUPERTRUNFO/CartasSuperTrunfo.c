@@ -111,40 +111,47 @@ int main() {
 
     // resultados
 
-    if (populacao1 > populacao2)
+    if (populacao1 > populacao2) {
         printf("População: Carta 1 vence (1)\n");
-    else
+    } else {
         printf("População: Carta 2 vence (0)\n");
+    }
 
-    if (area1 > area2)
+    if (area1 > area2) {
         printf("Área: Carta 1 vence (1)\n");
-    else
+    } else {
         printf("Área: Carta 2 vence (0)\n");
+    }
 
-    if (pib1 > pib2)
+    if (pib1 > pib2) {
         printf("PIB: Carta 1 vence (1)\n");
-    else
+    } else {
         printf("PIB: Carte 2 vence (0)\n");
+    }
 
-    if (pontosturisticos1 > pontosturisticos2)
+    if (pontosturisticos1 > pontosturisticos2) {
         printf("Pontos Turísticos: Carta 1 vence (1)\n");
-    else
+    } else {
         printf("Pontos Turísticos: Carta 2 vence (0)\n");
+    }
 
-    if (pib_percapita1 > pib_percapita2)
+    if (pib_percapita1 > pib_percapita2) {
         printf("PIB per Capita: Carta 1 vence (1)\n");
-    else
+    } else {
         printf("PIB per Capita: Carta 2 vence (0)\n");
+    }
 
-    if (densidade_populacional1 < densidade_populacional2)
+    if (densidade_populacional1 < densidade_populacional2) {
         printf("Densidade Populacional (menor vence): Carta 1 vence (1)\n");
-    else
+    } else {
         printf("Densidade Populacional (menor vence): Carta 2 vence (0)\n");
+    }
 
-    if (super1 > super2)
+    if (super1 > super2) {
         printf("Super Poder: Carta 1 vence (1)\n");
-    else
+    } else {
         printf("Super Poder: Carta 2 vence (0)\n");
+    }
 
     return 0;
 
